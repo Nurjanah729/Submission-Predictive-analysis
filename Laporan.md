@@ -89,13 +89,11 @@ Untuk mencapai tujuan di atas, beberapa pendekatan solusi akan diterapkan:
 EDA dilakukan untuk mendapatkan wawasan lebih dalam mengenai struktur data, distribusi fitur, dan hubungan antar variabel.
 
 * **Distribusi Kelas Target:** Visualisasi *countplot* menunjukkan dominasi kelas 'Lolos', menggarisbawahi perlunya metrik evaluasi yang tepat untuk *class imbalance*.
-
-    ![Distribusi Kelas Target](images/Distribusi_kelas.png)
-  
+    ![Distribusi Kelas Target](images/distribusi%20skor.png)
 * **Distribusi Skor Mata Pelajaran:** *Histogram* untuk setiap mata pelajaran menunjukkan sebaran skor, dengan sebagian besar terdistribusi mendekati normal.
-    ![Distribusi Skor Mata Pelajaran](https://github.com/NamaUserAnda/NamaRepoAnda/blob/main/images/histplots_scores.png?raw=true)
+    ![Distribusi Skor Mata Pelajaran](images/distribusi%20skor%20matpel.png)
 * **Analisis Korelasi:** *Heatmap* korelasi menunjukkan bahwa **kolom 'Total' memiliki korelasi positif yang sangat tinggi dengan 'Keterangan' (status kelulusan)**. Hal ini menunjukkan bahwa total skor merupakan indikator kelulusan yang paling kuat. Fitur-fitur lain juga berkorelasi positif namun dengan kekuatan yang bervariasi.
-    ![Heatmap Korelasi](https://github.com/NamaUserAnda/NamaRepoAnda/blob/main/images/correlation_heatmap.png?raw=true)
+    ![Heatmap Korelasi](images/heatmap%20korelasi.png)
 * **Deteksi Outlier:** *Box plot* digunakan untuk mengidentifikasi keberadaan *outlier* pada fitur-fitur skor. Meskipun ada beberapa *outlier*, jumlahnya tidak signifikan dan tidak memerlukan penanganan khusus karena model *ensemble* cenderung robust terhadapnya.
 
 ---
@@ -253,7 +251,7 @@ Untuk mengukur kinerja model klasifikasi, metrik-metrik berikut digunakan:
         * **False Negative (FN):** Jumlah kasus positif yang salah diprediksi sebagai negatif (juga dikenal sebagai Error Tipe II).
     * **Manfaat:** Memberikan gambaran rinci tentang jenis-jenis kesalahan yang dilakukan model, yang sangat penting untuk memahami kinerja model pada setiap kelas secara individual.
     * **Contoh Visualisasi (dari Logistic Regression):**
-        ![Confusion Matrix Logistic Regression](https://github.com/NamaUserAnda/NamaRepoAnda/blob/main/images/confusion_matrix_logreg.png?raw=true)
+        ![Confusion Matrix Logistic Regression](images/Logistic%20regression%20classifier.png)
 3.  **Classification Report (Precision, Recall, F1-Score):**
     * **Precision (Presisi):**
         * **Formula:** $`Precision = \frac{\text{TP}}{\text{TP + FP}}`$
