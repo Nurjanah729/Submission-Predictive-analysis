@@ -89,7 +89,9 @@ Untuk mencapai tujuan di atas, beberapa pendekatan solusi akan diterapkan:
 EDA dilakukan untuk mendapatkan wawasan lebih dalam mengenai struktur data, distribusi fitur, dan hubungan antar variabel.
 
 * **Distribusi Kelas Target:** Visualisasi *countplot* menunjukkan dominasi kelas 'Lolos', menggarisbawahi perlunya metrik evaluasi yang tepat untuk *class imbalance*.
-    ![Distribusi Kelas Target](https://github.com/NamaUserAnda/NamaRepoAnda/blob/main/images/countplot_keterangan.png?raw=true)
+
+    ![Distribusi Kelas Target](images/Distribusi_kelas.png)
+  
 * **Distribusi Skor Mata Pelajaran:** *Histogram* untuk setiap mata pelajaran menunjukkan sebaran skor, dengan sebagian besar terdistribusi mendekati normal.
     ![Distribusi Skor Mata Pelajaran](https://github.com/NamaUserAnda/NamaRepoAnda/blob/main/images/histplots_scores.png?raw=true)
 * **Analisis Korelasi:** *Heatmap* korelasi menunjukkan bahwa **kolom 'Total' memiliki korelasi positif yang sangat tinggi dengan 'Keterangan' (status kelulusan)**. Hal ini menunjukkan bahwa total skor merupakan indikator kelulusan yang paling kuat. Fitur-fitur lain juga berkorelasi positif namun dengan kekuatan yang bervariasi.
